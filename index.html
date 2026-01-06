@@ -6,21 +6,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form class="RegForm">
+      <form class="RegForm">
+        <h1>Registration Form</h2>
       <div class="details active">
         <h2>Personal Details</h2>
 
         <label>Name</label>
-        <input type="text" placeholder="Enter your full name" />
+        <input type="text" name="Name" placeholder="Enter your full name" />
 
         <label>Email</label>
-        <input type="email" placeholder="Enter your email" />
+        <input type="email" name="Email" placeholder="Enter your email" />
 
         <label>Phone</label>
-        <input type="text" placeholder="Enter your phone number" />
+        <input type="text" name="Phone" placeholder="Enter your phone number" />
 
         <label>Date of Birth</label>
-        <input type="date" />
+        <input type="date" name="DOB" />
 
         <button class="nextbtn">Next</button>
       </div>
@@ -29,10 +30,18 @@
         <h2>Parent / Guardian Details</h2>
 
         <label>Parent Name</label>
-        <input type="text" placeholder="Enter your Parent / Guardian Name" />
+        <input
+          type="text"
+          name="Parent Name"
+          placeholder="Enter your Parent / Guardian Name"
+        />
 
         <label>Parent Phone</label>
-        <input type="text" placeholder="Enter your Parent's Phone Number" />
+        <input
+          type="text"
+          name="Parent Phone"
+          placeholder="Enter your Parent's Phone Number"
+        />
 
         <button class="nextbtn">Next</button>
       </div>
@@ -41,10 +50,18 @@
         <h2>Address Details</h2>
 
         <label>Local Address</label>
-        <input type="text" placeholder="Enter your Local Address" />
+        <input
+          type="text"
+          name="Local Address"
+          placeholder="Enter your Local Address"
+        />
 
         <label>Permanent Address</label>
-        <input type="text" placeholder="Enter your Permanent Address" />
+        <input
+          type="text"
+          name="Permanent Address"
+          placeholder="Enter your Permanent Address"
+        />
 
         <button class="nextbtn">Next</button>
       </div>
@@ -53,11 +70,11 @@
         <h2>Education & Course</h2>
 
         <label>Qualification</label>
-        <input type="text" placeholder="Qualification" />
+        <input type="text" placeholder="qualification" name="Qualification" />
 
         <label>Course</label>
         <select>
-          <option>Select Course</option>
+          <option disabled  >Select Course</option>
           <option>Core Java</option>
           <option>Advanced Java</option>
           <option>Node JS</option>
@@ -66,10 +83,9 @@
 
         <button class="submitbtn">Submit</button>
       </div>
-      <div class="data">
-        <div id="result"></div>
-      </div>
+
     </form>
+    <div class="result"></div>
 
     <script src="script.js"></script>
   </body>
